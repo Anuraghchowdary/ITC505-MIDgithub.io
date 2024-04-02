@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Your Own Adventure</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Choose Your Own Adventure</h1>
+    </header>
+    <div id="story" class="content">
+        <p>Welcome to the mysterious forest. You stand at a crossroads. Which path will you choose?</p>
+    </div>
+    <div id="choices" class="content"></div>
+    <div id="image" class="content">
+        <img src="forest.jpg" alt="Forest">
+    </div>
+    <script src="script.js"></script>
+</body>
+<footer>
+    <p>This story is about a girl who finds herself at a crossroads in a mysterious forest. Where she has to choose a direction to go. 
+        If she chooses left she encounters a magical beast. Where she runs away or knows more about the forest by taking it. 
+        If she runs away she finds a portal that can lead to a new dimension. Or if she chooses right she will find a hidden chest with cold coins which she can take or leave alone.
+        
+        The story is structured as a series of stages, each represented by an object with properties like text, choices, consequences, and image.
+        Functions are defined to start the game, display each stage of the story, navigate to the next stage based on user choices, and end the game.
+        Event listeners are attached to buttons dynamically created for each choice, allowing users to interact with the story and progress through different stages.
+        The game starts automatically when the page loads, displaying the initial stage of the story.</p>
+
+    <p>Last updated: 
+        <span id="lastModified"></span>
+    </p>
+</footer>
+<script type="text/javascript">
+     var x = document.lastModified;
+     document.getElementById('lastModified').textContent = x;
+</script>
+</html>
